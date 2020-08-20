@@ -41,45 +41,4 @@ img{
 
 }
 
-@media screen and (max-width:500px)
-{
-	.name img{
-		height: 400px;
-	}
-	.name p{
-		font-size:70px ;
-		color: black;
-	}
-}
 
-.box1{																/*BOX 1*/
-	margin: 10px 5px 0 5px ;
-	width: auto;
-	background-color: white;
-	border-radius: 20px;
-}
-
-.box1 h1{
-	margin: 0 20px 8px 20px;
-
-}
-.box1 p{
-	margin: 0 20px 0 20px;
-	font-size: 25px;
-}
-
-.box2{
-	margin: 10px 5px 0 5px ;
-	width: auto;
-	background-color: white;
-	border-radius: 20px;
-}
-
-.box2 h1{
-	margin: 0 20px 8px 20px;
-
-}
-.box2 p{
-	margin: 0 20px 0 20px;
-	font-size: 25px;
-}
