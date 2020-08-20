@@ -1,23 +1,23 @@
 body{
 	background: url("https://img.freepik.com/free-vector/vintage-ornamental-flowers-background_52683-28040.jpg?size=626&ext=jpg");
-	
+	width:auto;
 }
 
 .name{
-  color: red;
-  text-align: center;
-  font-size:50px ;
+  	text-align: center;
 }
-.name img{
-  border-radius:50%;
-  height: 300px;
-  margin: 50px auto 0 auto;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 6px 6px rgba(0,0,0,0.2);
+.name img{																			/* Profile pic */
+  	border-radius:50%;
+  	height: 300px;
+  	margin: 50px auto 0 auto;
+  	box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 6px 6px rgba(0,0,0,0.2);
 }
 
 .name p{
-  font-family: 'Amiri', serif;
-  margin: 5px 0px 0px 0px;
+	color: red;
+  	font-family: 'Amiri', serif;													/* Profile name */
+  	font-size:50px ;
+  	margin: 5px 5px 0px 0px;
 }
 
 ul{
@@ -39,4 +39,47 @@ img{
 	height: 28px;
 	width: auto;
 
+}
+
+@media screen and (max-width:500px)
+{
+	.name img{
+		height: 400px;
+	}
+	.name p{
+		font-size:70px ;
+		color: black;
+	}
+}
+
+.box1{																/*BOX 1*/
+	margin: 10px 5px 0 5px ;
+	width: auto;
+	background-color: white;
+	border-radius: 20px;
+}
+
+.box1 h1{
+	margin: 0 20px 8px 20px;
+
+}
+.box1 p{
+	margin: 0 20px 0 20px;
+	font-size: 25px;
+}
+
+.box2{
+	margin: 10px 5px 0 5px ;
+	width: auto;
+	background-color: white;
+	border-radius: 20px;
+}
+
+.box2 h1{
+	margin: 0 20px 8px 20px;
+
+}
+.box2 p{
+	margin: 0 20px 0 20px;
+	font-size: 25px;
 }
