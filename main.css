@@ -8,25 +8,25 @@ body{
 }
 .name img{																			/* Profile pic */
   	border-radius:50%;
-  	height: 275px;
-  	margin: 50px auto 0 auto;
+  	height: 260px;
+  	margin: 70px auto 0 auto;
   	box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 6px 6px rgba(0,0,0,0.2);
 }
 
 .name p{
 	color: red;
-  	font-family: 'Amiri', serif;													/* Profile name */
+  	font-family: 'Times new roman', serif;													/* Profile name */
   	font-size:50px ;
-  	margin: 5px 5px 0px 0px;
+  	margin: 20px 5px 0px 0px;
 }
 
-ul{
+.icons{
 	text-align: center;
-	margin: 10px 15px 0px 0px;
+	margin: 17px 15px 0px 0px;
 	padding: 0px;
 }
 
-li{
+.icons li{
 	display:inline ;
 	margin: 0px 8px;
 }
@@ -41,4 +41,26 @@ img{
 
 }
 
+@media screen and (max-width:500px)
+{
+	.name img{
+		height: 400px;
+	}
+	.name p{
+		font-size:70px ;
+		color: black;
+	}
+}
 
+.tabs{
+	text-align: center;
+	font-family: 'tahoma', serif;
+	font-size: 20px;
+	margin: 40px 0px 0px 0px;
+	padding: 0px;
+}
+
+.tabs li{
+	display:inline ;
+	margin : 30px  10px 0px 10px ;
+}
