@@ -9,20 +9,20 @@ body{
 .name img{																			/* Profile pic */
   	border-radius:50%;
   	height: 260px;
-  	margin: 70px auto 0 auto;
+  	margin: 80px auto 0 8px;
   	box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 6px 6px rgba(0,0,0,0.2);
 }
 
 .name p{
 	color: red;
-  	font-family: 'Times new roman', serif;													/* Profile name */
-  	font-size:50px ;
-  	margin: 20px 5px 0px 0px;
+  	font-family: 'cabin', serif;													/* Profile name */
+  	font-size: 40px ;
+  	margin: 20px auto 0px auto;
 }
 
 .icons{
 	text-align: center;
-	margin: 17px 15px 0px 0px;
+	margin: 17px auto 20px auto;
 	padding: 0px;
 }
 
@@ -31,9 +31,6 @@ body{
 	margin: 0px 8px;
 }
 
-a{
-	color: white;
-}
 
 img{
 	height: 28px;
@@ -41,8 +38,7 @@ img{
 
 }
 
-@media screen and (max-width:500px)
-{
+@media screen and (max-width:500px) {
 	.name img{
 		height: 400px;
 	}
@@ -52,15 +48,80 @@ img{
 	}
 }
 
+header{
+	z-index: 1000000;
+	position: sticky;
+	top: 0;
+}
 .tabs{
-	text-align: center;
-	font-family: 'tahoma', serif;
-	font-size: 20px;
-	margin: 40px 0px 0px 0px;
-	padding: 0px;
+	position: relative;
+	display: flex;
+	font-family: 'tahoma';
+	justify-content: center;
+	align-items: : center;
+	margin: 60px 32px 60px 0px;
+	padding: 35px 100px
+	border: 0px;
 }
 
-.tabs li{
-	display:inline ;
-	margin : 30px  10px 0px 10px ;
+.tabs  li{
+	position: relative;
+	list-style: none;
+	margin:30px 25px;
+}
+
+.tabs  li a{
+	position: relative;
+	font-size: 25px;
+	text-decoration: none;
+	color: #464646;
+}
+
+.tabs  li a:hover {
+	
+  	color: red;
+}
+
+
+h3{
+	text-align: center;
+}
+
+
+#myBtn {
+	font-family: 'tahoma';
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99999; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent; /* Set a background color */
+  color: red; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 36px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: transparent; /* Add a dark-grey background on hover */
+  color: black;
+}
+
+header.sticky{
+	background: white;
+	line-height: 0px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0), 0 6px 6px rgba(0,0,0,0.15);
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+header.sticky ul li a{
+	color: black;
+	font-size: 20px;
+	padding: 0px;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
 }
