@@ -3,7 +3,7 @@
     <link href="main.css" rel="stylesheet" type="text/CSS">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <meta charset="utf-8">
-   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>history.scrollRestoration = "manual"</script>
     <title>Shashank HP</title>
     <link rel = 'icon' type = 'image/png' href = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Icon_S_blue.svg/512px-Icon_S_blue.svg.png'>
@@ -61,39 +61,97 @@
 
     <li><a href = '#home'>  HOME   </a> </li>
     <li><a href = '#info'>  MY INFO   </a> </li>
-    <li><a href = '#edu'>   EDUCATION  </a> </li>
     <li><a href = '#sk'>   SKILLS  </a> </li>
+    <li><a href = '#projects'>   PROJECTS  </a> </li>
     <li><a href = '#work'>  WORK EXPERIENCE   </a> </li>
 
   </ul>
 </header>
 
+  
+  <div id = 'info'>
+  <h3> MY INFO  </h3>
 
-  <h3 id = 'info'>MY INFO  </h3>
-   <p> Work in </p>
-    <p> Progress.....</p>
-	
-  <h3 id = 'edu'> EDUCATION</h3>
-    <p> Work in </p>
-    <p> Progress.....</p>
-	
-  <h3 id = 'sk'> SKILLS </h3>
-    <p> Work in </p>
-    <p> Progress.....</p>
+  
+    <span class='a'>
+      <h4> About me </h4>
+      <ul>
+        <li> <b> Who am I? </b>- Shashank HP </li>
+        <li> <b> When was I born? </b>- 24.05.2000 </li>
+        <li> <b> I am from? </b>- Bangalore </li>
+      </ul>
+    </span>
 
-  <h3 id = 'work'> WORK EXPERIENCE </h3>
-    <p> Work in </p>
-    <p> Progress.....</p>
+    <span class= 'b'>
+      <h4> Education </h4>
+      <ul>
+          <li> <b> Schooling </b>- St. John's School </li>
+          <li> <b> PU </b>- PCMC from Rashtrotthana PU college </li>
+          <li> <b> Degree </b>- B.E. in CSE from VTU  </li>
+      </ul>
+    </span>
+
+    <span class= 'c'>
+      <h4>Currently</h4>
+        <ul>
+          <li> Persuing my degree (3rd year) </li>
+          <li> Birthday Starchitects Digital handler </li>
+          <li> Youtuber </li>
+        </ul>
+    </span>
+  
+
+  </div>
+  
+  <div id = 'sk'>
+  <h3> SKILLS </h3>
+ 
+
+  </div>
+
+  <div id = 'projects'> 
+  <h3 > PROJECTS</h3>
+   	<p> Work in </p>
+        <p> Progress </p>
+  </div>
+  
+  <div id = 'work'>
+  <h3> WORK EXPERIENCE </h3>
+    	<p> Work in </p>
+        <p> Progress </p>
+   </div>
+
+     
+                                                                                                                // Page tracker
+     <div class="header">
+         <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+     </div>                                                                                                           
+
 
   <button onclick="topFunction()" id="myBtn" title="Go to top"> ▲ </button>
 </body> 
 
 
 <script >
-  mybutton = document.getElementById("myBtn");
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 530);
+  })
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+
+mybutton = document.getElementById("myBtn");
 
   // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
+  window.onscroll = function() {scrollFunction(),myFunction()};
 
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -109,10 +167,10 @@
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
-  
 
-  window.addEventListener("scroll", function(){
-    var header = document.querySelector('header');
-    header.classList.toggle("sticky", window.scrollY > 530);
-  })
+
+  // skill bar animation
+
+
+
 </script>
