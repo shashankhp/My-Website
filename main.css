@@ -38,23 +38,15 @@ img{
 
 }
 
-@media screen and (max-width:500px) {
-	.name img{
-		height: 400px;
-	}
-	.name p{
-		font-size:70px ;
-		color: black;
-	}
-}
-
 header{
 	z-index: 1000000;
+	position: -webkit- sticky;
 	position: sticky;
 	top: 0;
 }
+
 .tabs{
-	position: relative;
+
 	display: flex;
 	font-family: 'tahoma';
 	justify-content: center;
@@ -65,13 +57,13 @@ header{
 }
 
 .tabs  li{
-	position: relative;
+	position: sticky;
 	list-style: none;
 	margin:30px 25px;
 }
 
 .tabs  li a{
-	position: relative;
+	position: sticky;
 	font-size: 25px;
 	text-decoration: none;
 	color: #464646;
@@ -85,6 +77,7 @@ header{
 
 h3{
 	text-align: center;
+	padding-top: 10px;
 }
 
 
@@ -124,4 +117,110 @@ header.sticky ul li a{
 	padding: 0px;
 	transition-duration: 0.2s;
 	transition-timing-function: ease;
+}
+
+																							/* info */
+#info {
+	background-color: white;
+	margin: 0px 15px 30px 10px ;
+	border-radius: 7px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.2), 0 6px 6px rgba(0.9,0.9,0.9,0.1);
+}
+
+#info h3{
+	text-align: center;
+	padding: 13px 0px;
+}
+
+#info h4{
+	text-align: center;
+	padding-top: 10px
+}
+
+#info ul{
+	list-style: none;
+	padding: 5px 13px;
+}
+span{
+	
+	font-size: 18px;
+	margin: 0px 0px 23px 28px;
+}
+span.a {
+  display: inline-block; /* the default for span */
+  width: 400px;
+  height: 180px;
+
+  border-radius: 7px;  
+  background-color: gold; 
+
+}
+
+span.b {
+  display: inline-block; /* the default for span */
+  width: 400px;
+  height: 180px;
+  border-radius: 7px;  
+  background-color: gold; 
+
+}
+
+span.c {
+  display: inline-block;
+  width: 400px;
+  height: 180px;
+
+  border-radius: 7px;    
+  background-color: gold; 
+}
+
+																							/* skill */
+
+#sk {
+	background-color: white;
+	margin: 0px 15px 30px 15px ;
+	border-radius: 7px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.1);
+	padding-bottom: 20px;
+}
+
+
+
+																							/* projects */
+
+#projects {
+	background-color: white;
+	margin: 0px 15px 30px 15px ;
+	border-radius: 7px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.1);
+}
+
+																							/* work */
+
+#work {
+	background-color: white;
+	margin: 0px 15px 30px 15px ;
+	border-radius: 7px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.1);
+}
+
+
+.header {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: white;
+}
+
+.progress-bar {
+  height: 8px;
+  background: black;
+  width: 0%;
 }
